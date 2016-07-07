@@ -1,0 +1,23 @@
+       <div class="head" id="login-head">
+            <img src="images/tab/home-b3x.png" />
+            <h1>会展邦</h1>
+            <h2>HUIZHANBANG</h2>
+        </div>
+
+     <div class="logo-content">
+            <form name='form' ng-submit="submitForm(form.$valid)" novalidate>
+                <input class="account" name="account" ng-model="account" type="text" placeholder="请输入账号/手机号"  required/><br />
+                <div ng-show="form.$submitted || form.account.$touched">
+                  <div ng-show="form.account.$error.required" class="error-input">请输入手机号</div>
+                </div>
+                <input class="account" name="password" type="password"  ng-model="password" placeholder="请输入密码" required/><br />
+                <div ng-show="form.$submitted || form.password.$touched">
+                  <div ng-show="form.password.$error.required" class="error-input">请输入密码</div>
+                </div>
+                <button type="submit" class="login">登录</button>
+            </form>
+            <div class="nav">
+                <p class="enroll"><a href="#/register">新用户注册</a></p>
+                <p class="back"><a href="recover.html">找回密码</a></p>
+            </div>
+      </div>

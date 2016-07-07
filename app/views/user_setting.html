@@ -1,0 +1,91 @@
+
+<style>
+       #selectedFiles img {
+           max-width: 200px;
+           max-height: 200px;
+           float: right;
+           margin-bottom:10px;
+       }
+
+       .fileUpload {
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+        }
+        .fileUpload input.upload {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            }
+   </style>
+        <header>
+            <a href="#/user_info"><div class="previous"></div></a>
+            <div class="register">设 置</div>
+            <a href="javascript:;"><div class="next"></div></a>
+        </header>
+        <div id="install-content" class="finish-content">
+            <ul>
+
+                <a href="javascript:;" id="camera">
+                  <li class="avatar"><p>修改企业logo</p>
+                    <img src="{{theFile}}" />
+                  </li>
+                </a>
+                <a href="dcx-baseinfo.html"><li><p>企业资料</p><img src="images/2x/more2x.png" /></li></a>
+                <a href="#"><li><p>修改密码</p><img src="images/2x/more2x.png" /></li></a>
+            </ul>
+            <ul class="install">
+                <a href="dcx-member-one.html"><li><p>企业成员管理</p><img src="images/2x/more2x.png" /></li></a>
+                <a href="#"><li><p>企业认证申请</p><img src="images/2x/more2x.png" /></li></a>
+                <li class="install-special">
+                    <p>技术在线支持</p>
+                    <div class="install-a">
+                        <div class="install-b"></div>
+                        <input id="btn-ins" type="hidden" value="0" />
+                    <div>
+                </li>
+            </ul>
+            <ul class="install">
+                <a href="dcx-opinion.html"><li><p>意见反馈</p><img src="images/2x/more2x.png" /></li></a>
+                <a href="#"><li><p>关于我们</p><img src="images/2x/more2x.png" /></li></a>
+                <li class="exit"><a href="#/logout"><input type="submit" value="退出登录" /></a></li>
+            </ul>
+        </div>
+
+        <!-- 点击照相机出现下拉框 -->
+        <div class="popup">
+         <ul class="eject-one"></ul>
+         <ul class="eject-two">
+            <li>
+             <div class="fileUpload btn btn-primary">
+              <span>上传照片</span>
+             <input type="file" class="upload" id="file" name="file" multiple accept="image/*"  onchange="angular.element(this).scope().setFile(this)">
+               </div>
+           </li>
+            <a href="javascript:;"><li class="cancal">取消</li></a>
+         </ul>
+        </div>
+
+        <script type="text/javascript">
+
+
+        $(function () {
+        /* 点击照相机出现下拉框 */
+          $("#camera").on('click',function () {
+              $(".popup").slideToggle('slow');
+          });
+          $(".cancal").on('click',function () {
+              $(".popup").slideToggle('slow');
+          });
+
+        });
+
+
+
+       </script>

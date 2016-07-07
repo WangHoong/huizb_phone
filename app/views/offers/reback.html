@@ -1,0 +1,52 @@
+
+        <header>
+            <a  href="#/bidding/2"><div id="special" class="previous"></div></a>
+            <div id="somany" class="register">{{data.name}}</div>
+            <a><div class="next">客户</div></a>
+        </header>
+        <div class="part-one-message">
+            <ul>
+                <li class="address">
+                    <span>项目地址</span>
+                    <p>{{data.address}}</p>
+                </li>
+                <li class="time">
+                    <span>项目时间</span>
+                    <p> {{data.start_time * 1000 | date:'yyyy-MM-dd'}}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="partone-content">
+            <ul>
+                <li  ng-repeat="demand in data.items | filter:query | orderBy:orderProp">
+                  <div class="quote">
+                      <div ng-if="demand.image_url != '' " class="print">
+                        <img ng-src="{{demand.image_url}}?imageView2/1/w/150/h/150"/>
+                      </div>
+                      <ul id="amend" >
+                          <li>{{demand.name}}</li>
+                          <li id="item_{{demand.id}}" class="money">¥ {{demand.price}}</li>
+                      </ul>
+                     <div ng-if="demand.image_url != '' ">
+                      <a ng-href="#/offers/{{order_id}}/demand/{{demand.id}}?name={{demand.name}}&price={{demand.price}}&img_url={{demand.image_url}}?imageView2/1/w/350">
+                          <div class="price btn"><span>修改</span></div>
+                      </a>
+                    </div>
+                    <div ng-if="demand.image_url == '' ">
+                      <a ng-href="#/offers/{{order_id}}/edit/{{demand.id}}?name={{demand.name}}&price={{demand.price}}">
+                          <div class="price btn"><span>修改</span></div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        <div id="partthree-bid" class="partone-bid">
+            <ul>
+                <li><span class="inall">合计</span><p>¥{{data.sum_price}}</p></li>
+                <li><span>税金 {{rate}}%</span><p>¥{{data.tax}}</p></li>
+                <li><span class="inall">总计</span><p>¥{{data.total_price}}</p></li>
+                <li><span>最终报价</span><input class="enter-btn" type="text" placeholder="请输入最终优惠价" /></li>
+                <li class="refer"><input type="submit" value="提交投标"></li>
+            </ul>
+      </div>

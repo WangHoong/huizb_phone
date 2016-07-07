@@ -1,0 +1,43 @@
+ 
+        <header>
+             <div  id='no-one'class="previous"></div>
+            <div class="register">竞标项目</div>
+            <a href="#/vendor"><div class="next">排名</div></a>
+        </header>
+
+        <nav class="item-nav"><img src="images/item_nav.jpg" /></nav>
+        <div class="resource-list">
+            <ul>
+                <a href="#/items"><li>竞标列表</li></a>
+                <a href="#/demands"><li  id="special">需求列表</li></a>
+            </ul>
+        </div>
+        <div class="itme-content" >
+
+            <ul>
+                <li  ng-repeat="required in data.requireds | filter:query | orderBy:orderProp">
+                    <a href="dcx-demand-detail.html">
+                      <div class="grab">
+                            <span class="ms">{{required.created_at * 1000 | date:'yyyy-MM-dd'}}</span>
+                            <div id="demand-assembly" class="assembly">
+                                <h3>{{required.name}}</h3>
+                                <p><span>执行时间： {{required.start_time * 1000 | date:'yyyy-MM-dd'}}</span><span class="spec">响应人数：103个</span></p>
+                                <p>执行地点：{{required.address}}</p>
+                            </div>
+                            <div id="demand-rob" class="rob"> </div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <footer>
+            <div class="footer" id="footer-four">
+                <a href="#/items"><div class="tetra item" id="item-present">竞标项目</div></a>
+                <a href="#/bidding/0"><div class="tetra quote">我的报价</div></a>
+                <a href="#/demands"><div class="tetra goods">需求记录</div></a>
+                <a href="#/user_info"><div class="tetra personal">个人中心</div></a>
+            </div>
+        </footer>

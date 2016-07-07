@@ -1,0 +1,98 @@
+<header>
+    <a href="#/items"><div   class="previous"></div></a>
+    <div class="register">我的订单</div>
+</header>
+<nav class="bidding-nav">
+  <ul>
+      <a href="#/bidding/0"><li id="{{state == 0 ? 'pitch' : ''}}">竞标中</li></a>
+      <a href="#/bidding/1"><li id="{{state == 1 ? 'pitch' : ''}}">已中标</li></a>
+      <a href="#/bidding/2"><li id="{{state == 2 ? 'pitch' : ''}}">退回标</li></a>
+      <a href="#/bidding/3"><li id="{{state == 3 ? 'pitch' : ''}}">未中标</li></a>
+  </ul>
+</nav>
+
+<div  ng-controller='biddingControllers'>
+ <div infinite-scroll='reddit.nextPage()' infinite-scroll-disabled='reddit.busy' infinite-scroll-distance='1'>
+    <div class="bidding-content">
+        <ul>
+             <li ng-repeat="order in reddit.items | filter:query | orderBy:orderProp">
+                <div ng-if="reddit.state == 0" class="bid">
+                    <div class="offer">
+                        <h3>{{order.name}}</h3>
+                          <div class="offer-time">
+                              <p>开标时间：{{order.publish_time * 1000 | date:'yyyy-MM-dd'}}</p>
+                              <p>竞标人数：{{order.bidding_count}}</p>
+                          </div>
+                          <div class="right offer-time">
+                              <p>最高报价：{{order.highest_bid}} ￥</p>
+                              <p>推荐排名：<span>{{order.ranking}} <span></p>
+                          </div>
+                    </div>
+                    <div class="compete">
+                       <span>竞</span>
+                    </div>
+                </div>
+                <div ng-if="reddit.state == 1" class="bid">
+                  <a href="#/offers/{{order.order_id}}">
+                    <div class="offer">
+                        <h3>{{order.name}}</h3>
+                          <div class="offer-time">
+                              <p>开标时间：{{order.publish_time * 1000 | date:'yyyy-MM-dd'}}</p>
+                              <p>竞标人数：{{order.bidding_count}}</p>
+                          </div>
+                    </div>
+                    <div class="compete">
+                      <span>中</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div ng-if="reddit.state == 2" class="bid">
+                  <a href="#/offers/{{order.order_id}}/reback">
+                    <div class="offer">
+                        <h3>{{order.name}}</h3>
+                        <div class="offer-time">
+                            <p>开标时间：{{order.publish_time * 1000 | date:'yyyy-MM-dd'}}</p>
+                            <p>竞标人数：{{order.bidding_count}}</p>
+                        </div>
+                        <div class="right offer-time">
+                            <p>最高报价：{{order.highest_bid}} ￥</p>
+                            <p>推荐排名：<span>{{order.ranking}} <span></p>
+                        </div>
+                    </div>
+                    <div class="compete">
+                      <span>退</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div ng-if="reddit.state == 3" class="bid">
+                    <div class="offer">
+                        <h3>{{order.name}}</h3>
+                        <div class="offer-time">
+                            <p>抢单人数：{{order.bidding_count}}</p>
+                            <p>我的报价：￥{{order.mine_bid}}</p>
+                        </div>
+                        <div class="right offer-time">
+
+                            <p>推荐排名：<span>{{order.ranking}} <span></p>
+                        </div>
+                    </div>
+                    <div class="compete">
+                      <span>未</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+  </div>
+</div>
+<footer>
+    <div class="footer" id="footer-four">
+        <a href="#/items"><div class="tetra item">竞标项目</div></a>
+        <a href="#/bidding/0"><div class="tetra quote" id="item-present">我的报价</div></a>
+        <a href="#/demands"><div class="tetra goods">需求记录</div></a>
+        <a href="#/user_info"><div class="tetra personal">个人中心</div></a>
+    </div>
+</footer>

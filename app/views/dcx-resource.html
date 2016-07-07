@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Expires" content="-1">           
+        <meta http-equiv="Cache-Control" content="no-cache">           
+        <meta http-equiv="Pragma" content="no-cache">
+        <title>会展邦</title>
+       
+        <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="../css/dcx-common.css" rel="stylesheet" type="text/css" />
+        <link href="../css/photoswipe.css" rel="stylesheet" type="text/css" />
+        
+        <script type="text/javascript" src='../js/hhSwipe.js'></script>
+        <script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+        <script type="text/javascript" src="../js/simple-inheritance.min.js"></script>
+        <script type="text/javascript" src="../js/code-photoswipe-1.0.11.min.js"></script>
+        <script type="text/javascript" src="../js/my.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="#"><div id="camera" class="previous"></div></a>
+            <div class="register">赛文迪特</div>
+            <a href="dcx-install.html"><div id="setup" class="next"></div></a>
+        </header>
+
+        <div class="addWrap">
+            <div class="swipe" id="mySwipe">
+                <div class="swipe-wrap">
+                    <div><a href="javascript:;"><img class="img-responsive" src="../images/around-city.jpg"/></a></div>
+                    <div><a href="javascript:;"><img class="img-responsive" src="../images/resource-nav.jpg" /></a></div>
+                    <div><a href="javascript:;"><img class="img-responsive" src="../images/around-city.jpg"/></a></div>
+                    <div><a href="javascript:;"><img class="img-responsive" src="../images/resource-nav.jpg" /></a></div>
+                </div>
+            </div>
+    
+            <ul id="position">
+                <li class="cur">1/25</li>
+                <li>2/25</li>
+                <li>3/25</li>
+                <li>4/25</li>
+            </ul>
+
+        </div><!--/addWrap--> 
+
+        <div class="resource-list">
+            <ul>
+                <a href="dcx-trends.html"><li>动态</li></a>
+                <a href="dcx-resource.html"><li id="special">资源</li></a>
+            </ul>
+        </div>
+
+        <div class="resource-content"> 
+            <ul> 
+                <li>  
+                    <div class="picture">
+                        <ul  class="picul">
+                            <li class="time"><span>21</span>五月</li>
+                            <li class="photo">
+                                
+                                <ul id="ul1" class="photo-ul">
+                                    <li class="gallery-item"><a href="../images/arena-nav.jpg"><img src="../images/arena-nav.jpg" /></a></li>
+                                    <li class="gallery-item"><a href="../images/05.jpg"><img src="../images/05.jpg" /></a></li>
+                                    <li class="gallery-item"><a href="../images/01.jpg"><img src="../images/01.jpg" /></a></li>
+                                    <li class="gallery-item"><a href="../images/arena-nav.jpg"><img src="../images/arena-nav.jpg" /></a></li>
+                                </ul>
+                            
+                            </li>
+                            <li class="scrap"><p>设备</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="picture">
+                        <ul  class="picul">
+                            <li class="time"><span>21</span>五月</li>
+                            <li class="photo">
+                                <ul id="ul1" class="photo-ul">
+                                    <li class="gallery-item"><a href="../images/arena-nav.jpg"><img src="../images/arena-nav.jpg" /></a></li>
+                                    <li class="gallery-item"><a href="../images/05.jpg"><img src="../images/05.jpg" /></a></li>
+                                    <li class="gallery-item"><a href="../images/01.jpg"><img src="../images/01.jpg" /></a></li>
+                                    <li class="gallery-item"><a href="../images/arena-nav.jpg"><img src="../images/arena-nav.jpg" /></a></li>
+                                </ul>
+                            
+                            </li>
+                            <li class="scrap"><p>设备</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="picture">
+                        <ul  class="picul">
+                            <li class="time"><span>21</span>五月</li>
+                            <li class="photo">
+                                <ul id="ul1" class="photo-ul">
+                                    <li class="gallery-item"><a href="../images/arena-nav.jpg"><img src="../images/arena-nav.jpg" /></a></li>
+                                    <li class="gallery-item"><a href="../images/05.jpg"><img src="../images/05.jpg" /></a></li>
+                                    <li class="gallery-item"><a href="../images/01.jpg"><img src="../images/01.jpg" /></a></li>
+                                    <li class="gallery-item"><a href="../images/arena-nav.jpg"><img src="../images/arena-nav.jpg" /></a></li>
+                                </ul>
+                            
+                            </li>
+                            <li class="scrap"><p>设备</p></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <footer>
+            <div class="footer">
+                <a href="dcx-around.html"><div class="item">竞标项目</div></a>
+                <a href="dcx-bidding.html"><div class="quote">我的报价</div></a>
+                <a href="dcx-trends.html"><div id="personal-present" class="personal">个人中心</div></a>
+            </div>
+        </footer>
+
+        <!-- 点击照相机出现下拉框 -->
+        <div class="popup">
+            <ul class="eject-one"></ul>
+            <ul class="eject-two">
+                <a href="#"><li>发布设备</li></a>
+                <a href="#"><li>发布案例</li></a>
+                <a href="#"><li class="cancal">取消</li></a>
+            </ul>  
+        </div>
+       
+
+    </body>
+
+</html>

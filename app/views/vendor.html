@@ -1,0 +1,16 @@
+
+        <header>
+            <a href="#/items"><div class="previous"></div></a>
+            <div class="register">供应商排名</div>
+
+        </header>
+        <nav class="vendor-nav"><img src={{data.instructions_image}} /></nav>
+        <div class="vendor-content">
+            <ul>
+                <li class="lead" ng-repeat="item in data.items | filter:query | orderBy:orderProp">
+                    <span> TOP{{item.ranking}}</span>
+                    <p>{{item.name}}</p>
+                </li>
+            </ul>
+
+        </div>

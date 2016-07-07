@@ -1,0 +1,20 @@
+{
+  "name": "huizb_phone",
+  "version": "0.0.0",
+  "authors": [
+    "tnt29 <whq321@163.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "angularjs#~1.4.6",
+    "requirejs": "~2.1.20"
+  }
+}

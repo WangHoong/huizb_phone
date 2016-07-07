@@ -1,0 +1,378 @@
+/* 登录页面(dcx-login.html)  内容：输入、登录框 */
+.logo-content{width:100%; height:230px; position:fixed; bottom:0px; text-align:center; }
+.logo-content input{height:50px; width:88%; padding-left:2%; font-size:14px; color:black; border:none;}
+.logo-content .account{border-bottom:1px solid #aaadb2;}
+.logo-content .login{height:45px; width:90%; margin-top:30px; font-size:16px; color:#fff; background-color:#359df6; border-radius:4px; border:1px solid #359df6;}
+.logo-content a :hover{background-color:#3192e0}
+.logo-content .nav{width:90%; height:14px; margin:10px auto; font-size:14px; line-height:28px;}
+.logo-content .nav a{color:#7a7c80;}
+.logo-content .nav a:hover{color:#359df6;}
+.logo-content .nav .enroll{float:left;}
+.logo-content .nav .back{float:right;}
+
+
+/* 注册页面(dcx-register.html) 内容 */
+.register-content li{width:100%; height:55px; list-style:none;  border-bottom:1px solid #aaadb2;}
+.register-content input{border:none; color:black;}
+.register-content .number, .register-content .password{width:97%; height:55px;  padding-left:3%;}
+.register-content .verify{width:97%; height:85px; padding-right:3%;}
+.register-content .code{float:left; width:67%; height:85px; padding-left:3%;}
+.register-content .gain{float:right; width:30%; height:35px; margin-top:5px; color:#fff; background:#ff5026; border-radius:4px;}
+
+
+/* 注册完成页面(dcx-finish.html)  nav  */
+.finish-nav{width:100%; height:170px; padding-top:30px; text-align:center;  border-bottom:1px solid #e1e3e6;}
+/* 注册完成页面(dcx-finish.html) / 设置(dcx-install.html/dcx-install-two.html) 内容  */
+.finish-content{width:100%; height:150px;}
+.finish-content li{width:100%; height:50px; list-style:none; border-bottom:1px solid #e1e3e6; color:#7a7c80;}
+.finish-content li label{display:inline-block; width:30%; height:50px; line-height:48px; text-align:center; font-size:16px;}
+.finish-content li input{display:inline-block; width:70%; height:49px; border:none;}
+
+.finish-content li p{float:left; height:50px; width:35%; padding-left:5%; text-align:left; line-height:50px;}
+.finish-content li .finish-p{word-spacing:25px;}
+.finish-content li img{display:inline-block; float:right; height:26px; margin-right:15px; margin-top:12px;}
+
+
+/* 设置页面(dcx-install.html/dcx-install-two.html) 内容 */
+#install-content{height:100%; width:100%; }
+#install-content ul{background:#fff;}
+#install-content .install{width:100%; height:100%; margin-top:10px;}
+#install-content li{color:#313233; height:50px;}
+#install-content .avatar{position:relative;}
+#install-content .avatar span{display:block; height:34px; width:34px; position:absolute; top:9px; right:12%; background:url('../images/head.jpg') no-repeat; background-size:32px auto;}
+#install-content .exit{width:100%; height:80px; line-height:75px; text-align:center; border:none;}
+#install-content .exit input{width:90%; height:50px; font-size:16px; color:#fff; background-color:#ff4d4d; border:none; border-radius:4px;}
+#install-content .device-ul .exit input{background-color:#359df5; }
+/* 设置页面(dcx-install-two.html) 动画按钮 */
+#install-content .install-a{float:right; width:44px; height:23px; padding-top:1px; margin-right:15px; margin-top:12px; border-radius:12px; background-color:#359df5;}
+#install-content .install-a .install-b{width:22px; height:22px; border-radius:11px; margin-left:2px; background-color:#fbfbfb;}
+/* 添加样式 */
+#install-content .last-a{background-color:#e7d4d4;}
+#install-content .install-a .last-b{margin-left:20px;}
+
+/* 找回密码页面(dcx-recover.html) 内容  */
+.recover-content{width:100%; height:100px;}
+.recover-content li{list-style:none; width:100%; height:50px; border-bottom:1px solid #aaadb2;}
+.recover-content li input {width:97%; height:50px; padding-left:3%; color:black; border:none;}
+
+/* 竞标项目页面(dcx-around.html) 内容  */
+.around-content{width:100%; height:100%;margin-bottom:55px;}
+.around-content .check{width:100%; height:95px; border-bottom:1px solid #e1e4e6;}
+.around-content .check .assembly{float:left; width:65%; height:70px; padding-left:5%; padding-top:15px; padding-bottom:10px;}
+.around-content .check .assembly h3{font-size:16px; color:#313233; padding-bottom:5px;}
+.around-content .check .assembly p{font-size:14px; color:#7a7c80; }
+.around-content .check .icon{float:right; width:20%; height:60px; padding-left:10%;  padding-top:35px;}
+.around-content .check .icon span{display:block; width:55px; height:30px;  text-align:center; line-height:30px; font-size:14px; color:#fff; background-color:#359df6; border-radius:15px;}
+	/* 我的订单——竞标中(dcx-bidding.html)、已中标(dcx-earn.html)、退回标(dcx-refund.html)、未中标(dcx-withnot)  */
+	/* nav */
+.bidding-nav{width:100%; height:45px; background:#fff; border-bottom:1px solid #e1e4e6;}
+.bidding-nav li{float:left; width:25%; height:45px; line-height:45px; text-align:center; font-size:16px; color:#313233;}
+.bidding-nav a:active li{color:#359df6; border-bottom:4px solid #359df6;}
+.bidding-nav #pitch{color:#359df6; border-bottom:4px solid #359df6;}
+	/* 内容 我的订单——竞标中(dcx-bidding.html)、已中标(dcx-earn.html)、退回标(dcx-refund.html)、未中标(dcx-withnot) */
+.bidding-content{width:100%; height:100%; border-top:10px solid #f2f2f2; margin-bottom:55px;}
+.bidding-content .bid{width:100%; height:95px; border-bottom:1px solid #e1e4e6; background-color:#fff;}
+.bidding-content .offer{float:left; width:75%; height:70px; padding-left:5%; padding-top:15px; padding-bottom:10px;}
+.bidding-content .offer h3{font-size:16px; color:#313233; padding-bottom:5px;}
+.bidding-content .offer .offer-time{float:left; list-style:none;}
+.bidding-content .offer .right{margin-left:12px;}
+.bidding-content .offer p{font-size:14px; color:#7a7c80; }
+.bidding-content .offer p span{color:#f24724;}
+	/* 内容 竞标中(dcx-bidding.html)、退回标(dcx-refund.html) */
+.bidding-content .compete{float:left; width:20%; height:70px; padding-top:25px;}
+.bidding-content .compete span{display:block; list-style:none; height:40px; width:40px; text-align:center; line-height:40px; font-size:20px; color:#359df6; border:2px solid #7fbbef; border-radius:20px;}
+	/* 内容 已中标(dcx-earn.html) */
+.bidding-content .success{float:left; width:20%; height:70px; padding-top:25px;}
+.bidding-content .success span{display:block; list-style:none; height:40px; width:40px; text-align:center; line-height:40px; font-size:20px; color:#359df6; border:2px solid #359df6; border-radius:20px;}
+	/* 内容 未中标(dcx-withnot.html) */
+.bidding-content .withnot{float:left; width:20%; height:70px; padding-top:25px;}
+.bidding-content .withnot span{display:block; list-style:none; height:40px; width:40px; text-align:center; line-height:40px; font-size:20px; color:#e1e3e6; border:2px solid #e1e3e6; border-radius:20px;}
+
+
+/* 动态、资源栏  个人中心(dcx-trends.html / dcx-resource.html)  */
+.resource-list{width:100%; height:45px; border-bottom:1px solid #e1e4e6;}
+.resource-list li{float:left; width:50%; height:45px; line-height:45px; text-align:center; font-size:16px; color:#313233;}
+.resource-list a:active li{color:#359df6; border-bottom:4px solid #359df6;}
+.resource-list #special{color:#359df6; border-bottom:4px solid #359df6;}
+/* 内容  个人中心(dcx-trends.html / dcx-resource.html) / (dcx-upload-one.html) */
+.resource-content{width:100%; height:100%; margin-top:5px; margin-bottom:55px;}
+.resource-content .picture{width:100%; height:110px; border-bottom:1px solid #e1e4e6;}
+.resource-content .picture .picul{width:100%; height:75px; padding-top:15px;}
+.resource-content .picture .picul li{float:left;}
+.resource-content .picture .picul .time,.resource-content .picture .picul .photo{width:25%; height:80px;}
+.resource-content .picture .picul .time{font-size:14px; font-weight:bold; color:#313233; text-align:center;}
+.resource-content .picture .picul .time span{font-size:25px;}
+.resource-content .picture .picul .photo ul{width:80px; height:80px; overflow:hidden;}
+.resource-content .picture .picul .photo img{display:block; float:left;}
+	/* addClass 添加样式(根据上传照片的数量添加样式) */
+.pic-one{margin-right:4px;}
+.pic-two{margin-right:4px; margin-bottom:4px;}
+.pic-three{margin-bottom:4px;}
+	/* 介绍 */
+.resource-content .picture .scrap{width:46%; height:80px; position:relative; top:0px; left:4%;}
+.resource-content .picture .scrap p{font-size:14px; color:#313233;}
+.resource-content .picture .scrap span{display:block; color:#7a7c80; font-size:12px; position:absolute; left:0px; bottom:0px;}
+	/* 点击相册 */
+li.gallery-item img { display: block; width: 100%; height: 100px;}
+li.gallery-row:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+
+	/* 点击照相机 ，弹出下拉框 */
+.popup{display:none; width:100%; height:100%; position:fixed; top:0px; bottom:0px; left:0px; right:0px;}
+.popup .eject-one{display:block; width:100%; height:100%; position:fixed; top:0px; bottom:0px; left:0px; right:0px; background:#7f7f7f; opacity:0.5; filter:alpha(opacity=50);}
+.popup .eject-two{width:100%; height:150px; position:fixed; bottom:0; background-color:#fff;}
+.popup .eject-two li{list-style:none; height:50px; text-align:center; line-height:50px; color:#313233; border-top:1px solid #e1e3e6;}
+
+/* 第二次 图片轮播的徽章 */
+.addWrap .badge{height:30px; width:30px; position:absolute; bottom:12px; right:12px; line-height:38px; text-align:center; list-style:none; background:#172037; border-radius:15px;}
+.addWrap .badge img{display:inline-block; height:20px; width:20px;}
+/* 第二次 评论、点赞  下面的线不要 */
+.resource-content .pic{width:100%; height:140px; border:none;}
+.resource-content .pic .column{width:100%; height:20px; margin-top:10px;}
+.resource-content .pic .column li{list-style:none; float:left; width:50px; height:20px; color:#999999; line-height:20px; text-align:right; font-size:12px;}
+.resource-content .pic .column .comment{margin-left:60%; background:url('../images/2x/upload_comment.png') no-repeat center left; background-size:20px auto;}
+.resource-content .pic .column .praise{width:40px; margin-left:25px; background:url('../images/2x/upload_praise.png') no-repeat center left; background-size:20px auto;}
+
+
+/* 报价(一)(dcx-part-one.html) */
+.part-one-message{width:100%; height:110px; background-color:#fff;}
+	/* 报价(一)(dcx-part-one.html) / 报价(二)(dcx-part-two.html) / 报价(三)(dcx-part-three.html) / 报价(四)(dcx-part-four.html)  项目地址、项目时间 */
+.part-one-message .address{width:100%; height:59px; font-size:16px; border-bottom:1px solid #e3e5e8;}
+.part-one-message .address span{display:block; float:left; width:30%; height:59px; line-height:43px; text-align:center;  color:#313233;}
+.part-one-message .address p{float:left; width:70%; height:49px; padding-top:10px; color:#7a7c80;}
+.part-one-message .time{width:100%; height:50px; font-size:16px; border-bottom:1px solid #e3e5e8;}
+.part-one-message .time span{display:block; float:left; width:30%; height:50px; line-height:50px; text-align:center;  color:#313233;}
+.part-one-message .time p{float:left; width:70%; height:50px; line-height:50px; color:#7a7c80;}
+	/* 报价(二)(dcx-part-two.html) / 报价(四)(dcx-part-two.html) 项目简介 */
+#add{width:100%; height:195px;}
+#add .introduce{width:100%; height:85px; font-size:16px; border-bottom:1px solid #e3e5e8;}
+#add .introduce span{display:block; float:left; width:30%; height:85px; line-height:45px; text-align:center;  color:#313233;}
+#add .introduce p{float:left; width:70%; height:74px; padding-top:10px; color:#7a7c80;}
+
+/* 报价(一)(dcx-part-one.html) / 报价(一)(dcx-part-one.html) / 报价(四)(dcx-part-four.html) 内容 */
+.partone-content{width:100%; height:100%; margin-top:10px; background-color:#fff;}
+.partone-content .quote{width:100%px; height:85px; border-bottom:1px solid #e3e5e8;}
+.partone-content .print{float:left; width:25%; height:85px;}
+.partone-content .print img{display:inline-block; float:left; width:70px; height:70px; margin-top:8px; margin-left:25%;}
+.partone-content .quote p{float:left; width:45%; padding-left:5%; height:85px; line-height:85px; font-size:16px; color:#313233;}
+
+.partone-content .partone-word{float:left; width:69%; padding-left:6%; height:85px; line-height:85px;}
+.partone-content .partone-word h3{font-size:16px; color:#313233; font-weight:normal;}
+
+.partone-content .price{float:left; width:25%; height:85px; }
+.partone-content .price span{display:block; font-size:16px; font-weight:bold; color:#ff5026; line-height:85px; text-align:center;}
+.partone-content .btn span{display:block; height:30px; width:55px; margin:27px auto; line-height:30px; font-weight:normal; text-align:center; font-size:14px; font-weight:normal; color:#fff; border:1px solid #359df5; border-radius:15px; background-color:#359df5;}
+/* 报价(四)(dcx-part-four.html) 内容 */
+.partone-content #amend{float:left; width:45%; padding-left:5%; height:67px; padding-top:18px;}
+.partone-content #amend li{font-size:16px; color:#313233;}
+.partone-content #amend .money{font-size:18px; color:#ff5026; margin-top:5px;}
+
+/* 报价(二)(dcx-part-two.html) 内容 */
+.parttwo-content{width:100%; height:100%; margin-top:10px; background-color:#fff;}
+.parttwo-content .venue{width:100%; height:85px; border-bottom:1px solid #e3e5e8;}
+.parttwo-content .venue .light{float:left; width:70%; padding-left:5%; height:75px; padding-top:10px; text-align:left;}
+.parttwo-content .venue .light h3{font-size:16px; color:#13161b; padding-bottom:5px;}
+.parttwo-content .venue .light p{font-size:13px; color:#7a7c80;}
+.parttwo-content .venue .light .spec{margin-left:8px;}
+.parttwo-content .venue .circle{float:right; width:20%; height:55px; color:#ff5026;  padding-left:5%;  padding-top:30px; font-size:16px; font-weight:bold;}
+.parttwo-content .venue .circle span{display:block; height:30px; width:55px; font-size:14px; font-weight:normal; line-height:30px; text-align:center; color:#fff; background-color:#359df5; border-radius:15px;}
+
+/* 报价(一)(dcx-part-one.html) / 报价(二)(dcx-part-two.html) 提交投标 */
+.partone-bid , .brief-content{width:100%; height:100%; margin:10px auto 15px; background-color:#fff;}
+.partone-bid li , .brief-content li{width:100%; height:50px; color:#313233; font-size:16px; border-top:1px solid #e3e5e8;}
+.partone-bid li span {display:block; float:left; width:30%; height:50px; text-align:center; line-height:50px;}
+.partone-bid li .inall{word-spacing:25px;}
+.partone-bid li p , .brief-content li p{float:left; width:67%; padding-right:3%; height:50px; color:#7a7c80; text-align:right; line-height:50px;}
+
+.partone-bid li .enter-btn , .brief-content li .enter-btn{float:left; width:67%; padding-right:3%; height:50px; text-align:right; border:none;}.partone-bid li .enter{color:#ff5026;}
+
+.partone-bid .refer{width:100%; height:80px; line-height:75px; text-align:center;}
+.partone-bid .refer input{width:90%; height:50px; font-size:16px; color:#fff; background-color:#359df5; border:none; border-radius:4px;}
+	/* 报价(三)(dcx-part-three.html) 最终报价   */
+#partthree-bid{width:100%; height:200px; border-bottom:1px solid #e3e5e8;}
+#partthree-bid li .enter{font-weight:bold;}
+
+
+/* 提交按钮  舞台背景版内容1(有图片的)(dcx-arena-one.html) / 意见反馈(dcx-opinion.html) / 发布状态(dcx-issue.html)  */
+.arena-content .ensure{width:100%; height:80px; line-height:75px; text-align:center;}
+.arena-content .ensure input{width:90%; height:50px; font-size:16px; color:#fff; background-color:#359df5; border:none; border-radius:4px;}
+
+/* PK(dcx-pk.html) */
+.onepk-content{position:absolute; top:65px; bottom:0px; left:0px; right:0px; background-color:#7f7f7f;}
+.onepk-content img{width:100%; height:50%; margin-top:150px;}
+.onepk-content .detail{display:block; position:absolute; bottom:15px; right:15px; height:50px; width:50px; line-height:50px; font-size:17px; text-align:center; color:#359df5; background-color:#fff; border-radius:25px; border:1px solid #359df5;}
+
+.twopk-content{display:none; position:fixed; z-index:1000; top:0px; bottom:0px; left:0px; right:0px;}
+.twopk-clarity{position:absolute; top:0px; left:0px; right:0px; bottom:0px;}
+
+.twopx-list{width:100%; height:306px; overflow:auto; position:fixed; left:0px; right:0px; bottom:160px; background:#fff;}
+.twopx-list li{width:100%; height:50px; border-bottom:1px solid #e1e3e6;}
+.twopx-list li span{display:inline-block; float:left; width:20%; height:50px; line-height:50px; color:#313233; text-align:center;}
+.twopx-list li p{float:left; width:76%; padding-right:4%; height:50px; line-height:50px; color:#7a7c80; text-align:right;}
+
+.twopk-enter{width:100%; position:fixed;  left:0px; right:0px; bottom:0px; background:#fff;}
+.twopk-enter .inquiry{width:95%; height:50px; padding-left:5%; padding-top:30px; text-align:center;}
+.twopk-enter .inquiry input{float:left; width:70%; height:50px; padding-left:5%; color:black; border-radius:5px; border:1px solid #359df5;}
+.twopk-enter .inquiry label{float:left; display:inline-block; width:12%; padding-left:3%; height:50px; }
+.twopk-enter .inquiry label span{display:inline-block; width:50px; height:50px; line-height:50px; text-align:center; color:#359df5; border-radius:25px; border:1px solid #359df5;}
+.twopk-enter .ensure{width:100%; height:80px; line-height:75px; text-align:center;}
+.twopk-enter .ensure input{width:90%; height:50px; font-size:16px; color:#fff; background-color:#359df5; border:none; border-radius:4px;}
+
+/* 意见反馈(dcx-opinion.html) / 发布状态(dcx-issue.html) */
+.issue-nav ,.opinion-nav{width:100%; height:100%; background-color:#fff;}
+.issue-nav .opinion ,.opinion-nav .opinion{width:96%; padding-left:4%; height:142px; padding-top:8px; font-size:14px; color:black; border:none;}
+.opinion-nav .opinion{ border-bottom:1px solid #e1e3e6;}
+
+/* 发布状态(dcx-issue.html) */
+.issue-nav .picture{width:100%; height:90px; border-bottom:1px solid #e1e3e6;}
+.issue-nav .picture li{float:left; width:50px; height:50px; margin-top:20px; margin-left:10px;}
+.issue-nav .picture li img{display:inline-block; width:50px; height:50px; border-radius:25px;}
+
+.issue-list{width:100%; height:100%; margin-top:10px; background-color:#fff;}
+.issue-list li{width:100%; height:50px; font-size:16px; background:url('../images/2x/more2x.png') no-repeat center right; background-size:25px auto; border-bottom:1px solid #e1e3e6;}
+.issue-list span{display:inline-block; float:left; width:30%; height:50px; color:#313233; text-align:center; line-height:50px;}
+.issue-list p{float:left; width:62%; height:50px; padding-right:8%; color:#7a7c80; text-align:right; line-height:50px;}
+
+/* 发布结果(dcx-result.html) */
+.result-content{width:100%; height:350px;}
+.result-content .audit{width:100%; height:181px; padding-top:45px; text-align:center;}
+.result-content .audit span{display:inline-block; width:136px; height:136px; line-height:136px; text-align:center; font-size:20px; color:#359df6; border-radius:68px; border:2px solid #359df6;}
+.result-content h2{width:100%; text-align:center; font-size:50px;  font-weight:normal; color:#359df6;}
+.result-remark{width:100%; height:100%;}
+.result-remark li{width:100%; height:22px; font-size:14px; color:#7a7c80; line-height:22px; text-align:center;}
+
+/* 公司介绍(dcx-brief.html) / 公司评价(dcx-assess.html) */
+.brief-content{width:100%; height:100%; margin-top:0px;}
+.brief-content li span{display:block; float:left; width:25%; padding-left:5%; height:50px; text-align:left; line-height:50px;}
+.brief-content .last{border-bottom:1px solid #e1e3e6;}
+#brief-id{width:100%; height:160px; background-color:#fff; margin-bottom:15px;}
+
+/* 公司简介(文章介绍)(dcx-company.html) */
+article{width:100%; height:100%;}
+article p{width:90%; padding-top:10px;  padding-left:5%; padding-right:5%; line-height:23px; font-size:16px; color:#313233;}
+
+/* 竞标项目(dcx-item.html) */
+.item-nav{width:100%; height:200px; margin-top:-1px;}
+.item-nav img{width:100%; height:200px;}
+/* 内容 竞标项目(dcx-item.html) / 需求项目(dcx-demand.html)*/
+.itme-content{width:100%; height:100%; border-top:10px solid #f2f2f2; margin-bottom:55px;}
+.itme-content .grab{width:100%; height:100px; border-bottom:1px solid #e1e4e6; background-color:#fff;}
+.itme-content .assembly{float:left; width:80%; height:70px;  padding-top:15px; padding-bottom:10px;}
+.itme-content .assembly h3{font-size:16px; color:#313233; padding-bottom:5px; margin-left:8px;}
+.itme-content .assembly .item-time{float:left; margin-left:8px; list-style:none;}
+.itme-content .assembly .right{float:left; margin-left:8px;}
+.itme-content .assembly p{font-size:14px; color:#7a7c80; }
+.itme-content .rob{float:right; width:20%; height:70px; padding-top:30px;}
+.itme-content .rob span{display:block; width:55px; height:30px;  text-align:center; line-height:30px; font-size:14px; color:#fff; background-color:#359df6; border-radius:15px;}
+/* 需求项目(dcx-demand.html)(21分钟前) */
+.itme-content .grab{position:relative; top:0px; left:0px;}
+.itme-content .grab .ms{display:block; position:absolute; top:12px; right:15px; font-size:10px; color:#7a7c80;}
+.itme-content #demand-assembly{float:left; width:90%; height:75px;  padding-top:15px; padding-bottom:10px;}
+.itme-content #demand-assembly .spec{margin-left:15px;}
+.itme-content #demand-assembly p{margin-left:8px;}
+.itme-content #demand-rob{float:right; width:10%; height:70px; padding-top:30px; background:red; background:url('../images/2x/more2x.png') no-repeat center right; background-size:35px auto;}
+
+/* 需求项目(dcx-demand.html)(弹出框) */
+.bosom{display:none;}
+.item-back{z-index:2; position:absolute; top:0px; bottom:0px; left:0px; right:0px; background-color:#7f7f7f; opacity:0.5; filter:alpha(opacity=50);}
+.item-snatch{ z-index:1000; width:80%; height:130px; position:absolute; left:10%; top:40%; text-align:center; border:1px solid #cacaca; border-radius:4px; background-color:#fff;}
+.item-snatch p{width:100%; height:82px; padding-top:8px; line-height:23px; color:black;}
+.item-snatch ul{width:100%; height:40px; border-top:1px solid #cacaca;}
+.item-snatch ul li{float:left; width:50%; height:40px; text-align:center; line-height:40px; font-size:16px; color:black;}
+.item-snatch ul .abolish{width:50%; height:40px; background:url('../images/tab/item_line.gif') repeat-y;}
+.item-snatch ul a:hover li{color:#359df5; background-color:#dbdbdb;}
+
+
+/* 需求详情(dcx-demand-detail.html) 内容 */
+.detail-content{width:100%; height:100%;}
+.detail-content ul li{width:100%; height:50px; list-style:none; border-bottom:1px solid #e1e3e6;}
+.detail-content span{display:block; float:left; width:26%; padding-left:4%; height:50px; line-height:50px; }
+.detail-content p{width:65%;  float:left; height:50px; line-height:50px; color:#7a7c80;}
+/* 需求详情(dcx-demand-detail.html) 电话图标 */
+.detail-content .number{position:relative; top:0px; right:0px;}
+.detail-content .phone{width:30px; height:30px; position:absolute; top:10px; right:12px; background:url('../images/2x/phone.png') no-repeat; background-size:31px auto;}
+.detail-content .portray {width:100%; height:100px; }
+.detail-content .portray p{width:65%; float:left; height:100px; line-height:20px; margin-top:12px;}
+/* 需求详情(dcx-demand-detail.html) 响应需求按钮 */
+.detail-btn{width:100%; height:80px; margin-top:10px; text-align:center;}
+.detail-btn input{width:90%; height:50px; border-radius:4px; border:none; background-color:#359df5; color:#fff;}
+
+/* 供应商排名(dcx-vendor.html) nav */
+.vendor-nav{width:100%; height:200px; margin-top:-1px;}
+.vendor-nav img{width:100%; height:200px;}
+
+/* 内容  供应商排名(dcx-vendor.html) */
+.vendor-content{width:100%; height:100%;}
+.vendor-content ul li{width:100%; height:50px; list-style:none; font-size:16px; color:#313233; border-bottom:1px solid #e1e3e6;}
+.vendor-content span{display:block; float:left; width:20%; height:50px; text-align:center; line-height:50px;}
+.vendor-content .lead span{color:#359df5;}
+.vendor-content p{float:left; width:80%; height:50px; line-height:50px;}
+
+/* 发布状态页面 (dcx-state.html) */
+.state-content{width:100%; height:100%;}
+	/* 发布图片状态 */
+.state-content .space{width:100%; height:345px; padding-top:15px; border-bottom:1px solid #e1e3e6;}
+		/* 头像 */
+.state-content .space .avatar{float:left; width:20%; height:360px; text-align:center;}
+.state-content .space .avatar span{display:inline-block; width:44px; height:44px;  background:url('../images/head.jpg') no-repeat; background-size:45px; border-radius:22px;}
+		/* 发表的评论文字 */
+.state-content .space .info{float:right; width:80%; height:360px; }
+.state-content .space .info h2{width:90%; height:20px; margin-left:4px; font-size:16px; color:#313233;}
+.state-content .space .info p{width:90%;  margin-left:4px; font-size:14px; color:#7a7c80;}
+		/* 上传图片 */
+.state-content .space .pics{width:100%; height:230px; margin-top:15px;}
+.state-content .space .pics li{list-style:none; float:left; margin-left:4px; margin-top:4px; width:70px; height:70px;}
+.state-content .space .pics li img{display:block; width:70px; height:70px;}
+		/* 时间、评论、点赞 */
+.state-content .space .column{width:100%; height:20px; margin-top:10px;}
+.state-content .space .column li{list-style:none; float:left; color:#999999; font-size:12px;}
+.state-content .space .column .word{width:60px; height:20px; line-height:20px; text-align:left;}
+.state-content .space .column .comment{width:50px; height:20px; margin-left:35%; text-align:right; background:url('../images/2x/upload_comment.png') no-repeat center left; background-size:20px auto;}
+.state-content .space .column .praise{width:40px; height:20px; margin-left:5%; text-align:right; background:url('../images/2x/upload_praise.png') no-repeat center left; background-size:20px auto;}
+	/* 发布文字状态 */
+.state-content div.no-image{width:100%; height:80px; position:relative; left:0px; top:0px; border-bottom:1px solid #e1e3e6; }
+.state-content div.no-image .avatar{float:left; width:20%; height:80px;}
+.state-content div.no-image .info{float:right; width:80%; height:80px; }
+.state-content div.no-image .info span{font-size:12px; color:#999999; position:absolute; top:10px; right:8px;}
+
+/* 公司评价(dcx-assess.html) */
+div.state-content .no-image{width:100%; height:100px; position:relative; left:0px; top:0px; border-bottom:1px solid #e1e3e6;}
+div.state-content .no-image .avatar{float:left; width:20%; height:100px;}
+div.state-content .no-image .info{float:right; width:80%; height:100px; }
+div.state-content .no-image .info span{font-size:10px; color:#999999; position:absolute; top:10px; right:8px;}
+div.state-content .no-image .info ul{width:99%; height:20px; margin:5px 0 0 3px; font-size:12px; color:#359df5;}
+div.state-content .no-image .info ul li{float:left; width:25%; height:20px; text-align:left;}
+
+/* 成员列表(dcx-member-one.html) */
+.memone-content .no-image{width:100%; height:55px; padding-top:15px; border-bottom:1px solid #e1e3e6;}
+.memone-content .no-image .avatar{float:left; width:20%; height:70px; text-align:center;}
+.memone-content .no-image .avatar span{display:inline-block; height:44px; width:44px; background:url('../images/head.jpg') no-repeat; background-size:45px; border-radius:22px;}
+.memone-content .no-image .info{float:right; width:80%; height:67px; padding-top:3px;}
+.memone-content .no-image .info .human{float:left; width:70%; height:53px;}
+.memone-content .no-image .info .human h2{ height:20px; margin-left:4px; font-size:16px; color:#313233;}
+.memone-content .no-image .info .human p{  margin-left:4px; font-size:14px; color:#7a7c80;}
+.memone-content .no-image .info .delete{float:left; width:30%; height:53px; text-align:center; line-height:30px;}
+.memone-content .no-image .info .delete input{width:45px; height:30px;  color:#fff; font-size:12px;  border:none; border-radius:4px; background-color:#ff4c4c; }
+
+/* 基础信息(dcx-baseinfo.html) */
+.baseinfo-content ul .two-word span{word-spacing:26px;}
+.baseinfo-content ul .baseinfo-enter{display:inline-block; width:67%; height:50px; color:#313233; text-align:right; border:none;}
+.baseinfo-content ul .bank span{display:inline-block; float:left; width:40%;}
+.baseinfo-content ul .bank p{float:left; width:43%; background:url('../images/2x/add.png') no-repeat center right; background-size:35px auto;}
+.baseinfo-content ul .taxpayer{background:url('../images/2x/more2x.png') no-repeat center right; background-size:30px auto;}
+.baseinfo-content ul .men p{color:#313233; width:62%;}
+/* 垫资情况(dcx-payin.html) */
+.baseinfo-content ul li p{color:#313233;}
+.baseinfo-content ul .payin span{display:inline-block; float:left; width:40%;}
+.baseinfo-content ul .payin p{float:left; width:43%;}
+/* 投诉(dcx-complain.html) */
+.complain-consent{width:100%; height:100%; }
+.complain-consent .complain-div{width:70%; height:20px; margin:0 auto; text-align:left; line-height:20px;  font-size:12px;}
+.complain-consent .complain-div p{float:right; width:70%; height:20px;}
+.complain-consent .complain-div span{display:inline-block; float:left; height:20px; width:25%; background:url('../images/2x/select_g.png') no-repeat center right; background-size:15px auto; }
+.complain-consent a:hover .complain-div p{color:#359df5;}
+.complain-consent a:hover .complain-div span{background:url('../images/2x/select_b.png') no-repeat center right; background-size:15px auto;}
+
+
+.banner { position: relative; overflow: auto; height: 25%;width: 60%;}
+    .banner li { list-style: none; }
+   .banner ul li { float: left; }

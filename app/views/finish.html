@@ -1,0 +1,20 @@
+
+        <header>
+            <a href="#/register"><div class="previous"></div></a>
+            <div class="register">注 册</div>
+            <a href="javascript:void(0);"> <div class="next"  ng-click="submitForm(form.$valid)">完成</div></a>
+        </header>
+        <nav class="finish-nav">
+            <img src="images/2x/head2x.png" />
+        </nav>
+        <div class="finish-content">
+
+          <b ng-bind=""></b>
+            <ul>
+                <li><label>公司名称</label><input type="text" name="companyname" ng-model="companyname" required/></li>
+                <li><label>用户名称</label><input type="text" name="nickname" ng-model="nickname" required/></li>
+                <a href="#/city"><li><p class="finish-p">城 市</p><img src="images/2x/more2x.png" /></li></a>
+                <a href="#/category"><li><p class="finish-p">类 别</p><img src="images/2x/more2x.png" /></li></a>
+            </ul>
+        </div>
+ 

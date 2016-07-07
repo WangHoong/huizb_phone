@@ -1,0 +1,37 @@
+
+        <header>
+            <a  onclick="history.go(-1);"><div id="special" class="previous"></div></a>
+            <div id="somany" class="register">{{data.name}}</div>
+            <a><div class="next">客户</div></a>
+        </header>
+        <div class="part-one-message">
+            <ul>
+                <li class="address">
+                    <span>项目地址</span>
+                    <p>{{data.address}}</p>
+                </li>
+                <li class="time">
+                    <span>项目时间</span>
+                    <p> {{data.start_time * 1000 | date:'yyyy-MM-dd'}}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="partone-content">
+            <ul>
+                <li  ng-repeat="item in data.items | filter:query | orderBy:orderProp">
+                    <div class="quote">
+                        <div ng-if="item.image_url != '' " class="print"><img ng-src="{{item.image_url}}?imageView2/1/w/150/h/150" /></div>
+                        <p>{{item.name}}</p>
+                        <div class="price"><span>¥{{item.price}}</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="partthree-bid" class="partone-bid">
+            <ul>
+                <li><span class="inall">合计</span><p>¥{{data.sum_price}}</p></li>
+                <li><span>税金10%</span><p>¥{{data.tax}}</p></li>
+                <li><span class="inall">总计</span><p>¥{{data.total_price}}</p></li>
+                <li><span>最终报价</span><p class="enter">¥{{data.final_price}}</p></li>
+              </ul>
+         </div>

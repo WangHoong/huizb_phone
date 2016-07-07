@@ -1,0 +1,33 @@
+
+        <header>
+            <a onclick="history.go(-1);"><div id="special" class="previous"></div></a>
+            <div id="somany" class="register">{{name}}</div>
+        </header>
+
+        <div class="partone-bid">
+                      <ul id="amend">
+                            <li><span>{{item.name}}</span>
+                              <span class="enter-btn"> {{item.demand}}</span>
+                           </li>
+                           <li><span>{{count.name}}</span>
+                             <span class="enter-btn"> {{count.demand}}</span>
+                          </li>
+                      </ul>
+
+          </div>
+
+
+
+        <div   class="twopk-enter">
+          <ul>
+              <li class="inquiry">
+                  <input type="text" ng-model="price" placeholder="请输入报价" />
+                  <a href="javascript:void(0)" ng-click="FetchViewData(price)"><label><span>询价</span></label></a>
+              </li>
+              <li class="ensure">
+                 <a href="javascript:void(0)" ng-click="SubmitPrice(price)">
+                   <input type="submit" value="确定" />
+                 </a>
+              </li>
+          </ul>
+      </div>

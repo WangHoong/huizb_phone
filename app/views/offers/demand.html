@@ -1,0 +1,48 @@
+
+        <header>
+            <a  onclick="history.go(-1);"><div class="previous"></div></a>
+            <div class="register">{{name}}</div>
+
+        </header>
+        <div class="onepk-content">
+            <img ng-src="{{img_url}}" />
+            <a href="javascript:void(0)"><span class="detail">详情</span></a>
+        </div>
+        <div class="twopk-content">
+            <div class="twopk-clarity"></div>
+            <div class="twopx-list">
+                <ul>
+                    <li  ng-repeat="item in  items | filter:query | orderBy:orderProp">
+                     <span>{{item.name}}</span><p>{{item.demand}} </p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="twopk-enter">
+                <ul>
+                    <li class="inquiry">
+                        <input type="text" ng-model="price" placeholder="请输入报价" />
+                        <a href="javascript:void(0)" ng-click="FetchViewData(price)"><label><span>询价</span></label></a>
+                    </li>
+                    <li class="ensure">
+                       <a href="javascript:void(0)" ng-click="SubmitPrice(price)">
+                         <input type="submit" value="确定" />
+                       </a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $(".detail").on('click',function () {
+                    $(".twopk-content").slideToggle('slow');
+                });
+                $(".twopk-clarity").on('click',function () {
+                    $(".twopk-content").slideToggle('slow');
+                });
+
+            });
+
+
+
+        </script>

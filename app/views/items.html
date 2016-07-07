@@ -1,0 +1,61 @@
+
+    <div ng-controller="qdanControllers">
+
+        <header>
+           <div id='no-one' class="previous"></div> 
+            <div class="register">竞标项目</div>
+            <a href="#/vendor"><div class="next">排名</div></a>
+        </header>
+
+        <nav class="item-nav"><img src="images/item_nav.jpg" /></nav>
+        <div class="resource-list">
+            <ul>
+                <a href="#/items"><li id="special">竞标列表</li></a>
+                <a href="#/demands"><li>需求列表</li></a>
+            </ul>
+        </div>
+        <div class="itme-content" >
+
+            <ul>
+               <li ng-repeat="item in data.items | filter:query | orderBy:orderProp">
+                   <div class="grab">
+                        <div class="assembly">
+                            <h3>{{item.name}}</h3>
+                            <div class="item-time">
+                                <p>开标时间：{{item.publish_time * 1000 | date:'yyyy-MM-dd'}}</p>
+                                <p>竞标人数：{{item.company_cnt}}</p>
+                            </div>
+                            <div class="right"><p>执行时间：{{item.start_time * 1000 | date:'yyyy-MM-dd'}}</p></div>
+                       </div>
+
+                     <div ng-if="item.is_bidding == 0">
+                       <div class="rob"><a href="javascript:void(0);">
+                         <span  ng-click='delog(item.id)'>抢单</span></a>
+                       </div>
+                     </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bosom">
+          <div class="item-back"></div>
+           <div class="item-snatch">
+                <p>确定抢单后，必须在2个小时内<br />报完价格，否则会影响后续获<br />取竞标项目的机会。</p>
+                <ul>
+                    <input type="hidden" id="item_id" name="item_id"/>
+                    <a href="javascript:void(0);"><li ng-click="close()">取消</li></a>
+                    <a href="javascript:void(0);"><li ng-click="submit()" class="abolish">确定</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer" id="footer-four">
+                <a href="#/items"><div class="tetra item" id="item-present">竞标项目</div></a>
+                <a href="#/bidding/0"><div class="tetra quote">我的报价</div></a>
+                <a href="#/demands"><div class="tetra goods">需求记录</div></a>
+                <a href="#/user_info"><div class="tetra personal">个人中心</div></a>
+            </div>
+        </footer>
+  </div>
